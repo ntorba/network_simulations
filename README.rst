@@ -15,8 +15,11 @@ network-simulations
 
 
 
+This library is a python translation of [this code](https://github.com/alexlamb/groupdecision) written by [Alex Lamb](https://www.alexlamb.com/).
 
-Python Boilerplate contains all the boilerplate you need to create a Python package.
+It is meant to run network simluations explained in [this article](https://thetinkerpoint.com/2019/02/11/why-the-world-has-gone-crazy/).
+
+To see the results, run the check out the [notebooks/run_experiments.ipynb notebooks](https://github.com/ntorba/network_simulations/blob/master/notebooks/run_experiments.ipynb). With it, you are able to easily adjust environment variables to see how initial conditions and bias effect the outcome of a networks opinions.
 
 
 * Free software: MIT license
