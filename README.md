@@ -3,18 +3,6 @@ network-simulations
 ===================
 
 
-.. image:: https://img.shields.io/pypi/v/network_simulations.svg
-        :target: https://pypi.python.org/pypi/network_simulations
-
-.. image:: https://img.shields.io/travis/ntorba/network_simulations.svg
-        :target: https://travis-ci.com/ntorba/network_simulations
-
-.. image:: https://readthedocs.org/projects/network-simulations/badge/?version=latest
-        :target: https://network-simulations.readthedocs.io/en/latest/?badge=latest
-        :alt: Documentation Status
-
-
-
 This library is a python translation of [this code](https://github.com/alexlamb/groupdecision) written by [Alex Lamb](https://www.alexlamb.com/).
 
 It is meant to run network simluations explained in [this article](https://thetinkerpoint.com/2019/02/11/why-the-world-has-gone-crazy/).
