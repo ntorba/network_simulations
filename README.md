@@ -1,7 +1,5 @@
-===================
-network-simulations
-===================
 
+## network-simulations
 
 This library is a python translation of [this code](https://github.com/alexlamb/groupdecision) written by [Alex Lamb](https://www.alexlamb.com/).
 
