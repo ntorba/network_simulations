@@ -9,8 +9,6 @@ To see the results, run the check out the [notebooks/run_experiments.ipynb noteb
 
 
 * Free software: MIT license
-* Documentation: https://network-simulations.readthedocs.io.
-
 
 Features
 --------
