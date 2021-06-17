@@ -1,10 +1,8 @@
+"""
+Module to create different types of networkx graphs
+"""
 import random
-from abc import abstractmethod
 import networkx as nx
-
-NO_OPINION = 0
-UNDECIDED = 0.3
-DECIDED = 0.7
 
 
 def scale_free_network(num_nodes, min_neighbors):
@@ -19,14 +17,11 @@ def scale_free_network(num_nodes, min_neighbors):
         We must have at least min_neighbor nodes to start, with arbitrary connections between them
     """
 
-    G = nx.complete_graph(min_neighbors)
-    for i_node in G.nodes():
-        G.nodes[i_node].update(
-            dict(opinion=NO_OPINION, confidence=UNDECIDED, samples=[])
-        )
-
+    G = nx.complete_graph(
+        min_neighbors
+    )  # TODO: confirm this is an appropriate intializer (the definition says the links here aren't important)
     for i_new_node in range(min_neighbors, num_nodes):
-        G.add_node(i_new_node, opinion=NO_OPINION, confidence=UNDECIDED, samples=[])
+        G.add_node(i_new_node)
         selection_list = []
         for i_candidate in G.nodes():
             # Add more possible choices because it has more neighbors
@@ -42,9 +37,9 @@ def scale_free_network(num_nodes, min_neighbors):
 
 def random_network(num_nodes, min_neighbors):
     G = nx.Graph(name="random graph")
-    G.add_node(0, opinion=NO_OPINION, confidence=UNDECIDED, samples=[])
+    G.add_node(0)
     for i_node in range(0, num_nodes):
-        G.add_node(i_node, opinion=NO_OPINION, confidence=UNDECIDED, samples=[])
+        G.add_node(i_node)
 
     for i_node in G.nodes:
         while G.degree[i_node] < min_neighbors:
