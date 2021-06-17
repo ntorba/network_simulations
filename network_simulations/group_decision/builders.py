@@ -1,5 +1,9 @@
+"""
+Network builders for group decision simulations.
+They use the generalized builders from network_simulations.builders and then add intialized nodes, aka nodes with opinions
+"""
 import random
-from network_simulations.builder import scale_free_network, random_network
+from network_simulations.builders import scale_free_network, random_network
 
 
 def random_init(
